@@ -1251,20 +1251,15 @@ text-decoration:none;
 
 
    <div class="tabs-scroll">
-<button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="Dosa">🥞 Dosa</button>
-<button class="tab" data-cat="Special Dosa">🧀 Special Dosa</button>
-<button class="tab" data-cat="Idli / Uttapam">🍘 Idli / Uttapam</button>
-<button class="tab" data-cat="Snacks / Chaat">🍟 Snacks / Chaat</button>
-<button class="tab" data-cat="Pav Bhaji">🍛 Pav Bhaji</button>
-<button class="tab" data-cat="Extras">➕ Extras</button>
-<button class="tab" data-cat="Pulav">🍚 Pulav</button>
-<button class="tab" data-cat="Meals">🍱 Meals</button>
-<button class="tab" data-cat="Bread">🥪 Bread</button>
-<button class="tab" data-cat="Pizza">🍕 Pizza</button>
-<button class="tab" data-cat="Chinese">🍜 Chinese</button>
-<button class="tab" data-cat="Beverages">🥤 Beverages</button>
-            </div>  
+<button class="tab active" data-cat="all">🍽️ सर्व पदार्थ (All Items)</button>
+<button class="tab" data-cat="Morning Snacks">🍳 सकाळचा नाश्ता (Morning Snacks)</button>
+<button class="tab" data-cat="Lunch Veg">🥗 व्हेज लंच (Lunch Veg)</button>
+<button class="tab" data-cat="Lunch Non-Veg">🍗 नॉन-व्हेज लंच (Lunch Non-Veg)</button>
+<button class="tab" data-cat="Lunch Seafood">🐟 सीफूड लंच (Lunch Seafood)</button>
+<button class="tab" data-cat="Biryani">🥘 बिर्याणी (Biryani)</button>
+<button class="tab" data-cat="Beverages">🥤 पेये (Beverages)</button>
+<button class="tab" data-cat="Sweets">🥞 गोड पदार्थ (Sweets)</button>        
+         </div>  
                 </div>
             </div>
 
@@ -1409,7 +1404,76 @@ text-decoration:none;
         // Menu Data - FIXED VERSION
         const data = [
 
+{"id": 1, "cat": "Morning Snacks", "name": "व्हेज आप्पे चटणी (6 Pcs) | Veg Appe Chutney", "price": "Rs. 40", "desc": "Veg Appe Chutney (6 Pcs).", "tags": ["Veg", "Snacks", "Appe"], "img": "img/veg_appe_chutney.jpeg"},
+{"id": 2, "cat": "Morning Snacks", "name": "पुरणपोळी (1 Pc) | Puranpoli", "price": "Rs. 40", "desc": "Puranpoli (1 Pc).", "tags": ["Veg", "Snacks", "Sweet"], "img": "img/puranpoli.jpeg"},
+{"id": 3, "cat": "Morning Snacks", "name": "इडली चटणी (4 Pcs) | Idli Chutney", "price": "Rs. 40", "desc": "Idli Chutney (4 Pcs).", "tags": ["Veg", "Snacks", "Idli"], "img": "img/idli_chutney.jpeg"},
+{"id": 4, "cat": "Morning Snacks", "name": "चपाती (1 Pc) | Chapati", "price": "Rs. 8", "desc": "Chapati (1 Pc).", "tags": ["Veg", "Roti", "Breads"], "img": "img/chapati.jpeg"},
+{"id": 5, "cat": "Morning Snacks", "name": "मेदू वडा चटणी (4 Pcs) | Medu Vada Chutney", "price": "Rs. 40", "desc": "Medu Vada Chutney (4 Pcs).", "tags": ["Veg", "Snacks", "Vada"], "img": "img/medu_vada_chutney.jpeg"},
+{"id": 6, "cat": "Morning Snacks", "name": "भाकरी (Rice/Javari/Nachni/Mix) | Bhakri", "price": "Rs. 25", "desc": "Bhakri (Rice, Javari, Nachni or Mix).", "tags": ["Veg", "Roti", "Breads", "Bhakri"], "img": "img/bhakri.jpeg"},
+{"id": 7, "cat": "Morning Snacks", "name": "घावणे चटणी (2 Pcs) | Ghavane Chutney", "price": "Rs. 40", "desc": "Ghavane Chutney (2 Pcs).", "tags": ["Veg", "Snacks", "Ghavane"], "img": "img/ghavane_chutney.jpeg"},
+{"id": 8, "cat": "Morning Snacks", "name": "मालवणी वडे (8 Pcs) | Malvani Vade", "price": "Rs. 100", "desc": "Malvani Vade (8 Pcs).", "tags": ["Veg", "Snacks", "Vade"], "img": "img/malvani_vade.jpeg"},
+{"id": 9, "cat": "Morning Snacks", "name": "बटाटा वडा (1 Pc) | Batata Vada", "price": "Rs. 15", "desc": "Batata Vada (1 Pc).", "tags": ["Veg", "Snacks", "Vada", "Batata"], "img": "img/batata_vada.jpeg"},
+{"id": 10, "cat": "Morning Snacks", "name": "व्हेज मोमोज (4 Pcs) | Veg Momos", "price": "Rs. 80", "desc": "Veg Momos (4 Pcs).", "tags": ["Veg", "Snacks", "Momos"], "img": "img/veg_momos.jpeg"},
+{"id": 11, "cat": "Morning Snacks", "name": "कांदे पोहे | Kande Pohe", "price": "Rs. 30", "desc": "Kande Pohe.", "tags": ["Veg", "Snacks", "Pohe"], "img": "img/kande_pohe.jpeg"},
+{"id": 12, "cat": "Morning Snacks", "name": "चीज मोमोज (4 Pcs) | Cheese Momos", "price": "Rs. 60", "desc": "Cheese Momos (4 Pcs).", "tags": ["Veg", "Snacks", "Momos", "Cheese"], "img": "img/cheese_momos.jpeg"},
+{"id": 13, "cat": "Morning Snacks", "name": "प्रसादी शिरा (Ghee Base) | Parsadi Sheera", "price": "Rs. 40", "desc": "Parsadi Sheera (Ghee Base).", "tags": ["Veg", "Snacks", "Sweet", "Sheera"], "img": "img/parsadi_sheera.jpeg"},
+{"id": 14, "cat": "Morning Snacks", "name": "चीज पनीर मोमोज (4 Pcs) | Cheese Paneer Momos", "price": "Rs. 100", "desc": "Cheese Paneer Momos (4 Pcs).", "tags": ["Veg", "Snacks", "Momos", "Cheese", "Paneer"], "img": "img/cheese_paneer_momos.jpeg"},
+{"id": 15, "cat": "Morning Snacks", "name": "उपमा (Ghee Base) | Upma", "price": "Rs. 30", "desc": "Upma (Ghee Base).", "tags": ["Veg", "Snacks", "Upma"], "img": "img/upma.jpeg"},
+{"id": 16, "cat": "Morning Snacks", "name": "चीज टिक्का सँडविच | Cheese Tikka Sandwich", "price": "Rs. 60", "desc": "Cheese Tikka Sandwich.", "tags": ["Veg", "Snacks", "Sandwich", "Cheese"], "img": "img/cheese_tikka_sandwich.jpeg"},
+{"id": 17, "cat": "Morning Snacks", "name": "थालीपीठ (Ghee Base) (1 Pc) | Thaleepith", "price": "Rs. 40", "desc": "Thaleepith (Ghee Base) (1 Pc).", "tags": ["Veg", "Snacks", "Thaleepith"], "img": "img/thaleepith.jpeg"},
+{"id": 18, "cat": "Morning Snacks", "name": "चॉकलेट सँडविच | Chocolate Sandwich", "price": "Rs. 80", "desc": "Chocolate Sandwich.", "tags": ["Veg", "Snacks", "Sandwich", "Chocolate"], "img": "img/chocolate_sandwich.jpeg"},
+{"id": 19, "cat": "Morning Snacks", "name": "आंबोळी चटणी (1 Pc) | Amboli Chutney", "price": "Rs. 30", "desc": "Amboli Chutney (1 Pc).", "tags": ["Veg", "Snacks", "Amboli"], "img": "img/amboli_chutney.jpeg"},
+{"id": 20, "cat": "Morning Snacks", "name": "ब्रेड बटर (2 Pcs) | Bread Butter", "price": "Rs. 20", "desc": "Bread Butter (2 Pcs).", "tags": ["Veg", "Snacks", "Bread", "Butter"], "img": "img/bread_butter.jpeg"},
+{"id": 21, "cat": "Morning Snacks", "name": "शिरवाळे विथ कोकोनट सिरप | Shirvale with Coconut Syrup", "price": "Rs. 100", "desc": "Shirvale with Coconut Syrup (Pcs).", "tags": ["Veg", "Snacks", "Sweet"], "img": "img/shirvale_coconut_syrup.jpeg"},
+{"id": 22, "cat": "Lunch Veg", "name": "स्टीम राईस | Steam Rice", "price": "Rs. 50", "desc": "Steam Rice.", "tags": ["Veg", "Main Course", "Rice"], "img": "img/steam_rice.jpeg"},
+{"id": 23, "cat": "Lunch Veg", "name": "डाळ | Dal", "price": "Rs. 50", "desc": "Dal.", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal.jpeg"},
+{"id": 24, "cat": "Lunch Veg", "name": "एनी रुटीन भाजी | Any Routine Bhaji", "price": "Rs. 50", "desc": "Any Routine Bhaji.", "tags": ["Veg", "Main Course", "Bhaji"], "img": "img/any_routine_bhaji.jpeg"},
+{"id": 25, "cat": "Lunch Veg", "name": "पनीर भुर्जी | Paneer Bhurji", "price": "Rs. 70", "desc": "Paneer Bhurji.", "tags": ["Veg", "Main Course", "Paneer"], "img": "img/paneer_bhurji.jpeg"},
+{"id": 26, "cat": "Lunch Veg", "name": "पुरी भाजी | Puri Bhaji", "price": "Rs. 80", "desc": "Puri Bhaji.", "tags": ["Veg", "Main Course", "Puri"], "img": "img/puri_bhaji.jpeg"},
+{"id": 27, "cat": "Lunch Veg", "name": "सोया खिमा | Soya Kheema", "price": "Rs. 70", "desc": "Soya Kheema.", "tags": ["Veg", "Main Course", "Soya"], "img": "img/soya_kheema.jpeg"},
+{"id": 28, "cat": "Lunch Non-Veg", "name": "अंडा भुर्जी | Anda Bhurji", "price": "Rs. 80", "desc": "Anda Bhurji.", "tags": ["Non-Veg", "Main Course", "Eggs"], "img": "img/anda_bhurji.jpeg"},
+{"id": 29, "cat": "Lunch Non-Veg", "name": "ऑमलेट | Omlet", "price": "Rs. 25", "desc": "Omlet.", "tags": ["Non-Veg", "Snacks", "Eggs"], "img": "img/omlet.jpeg"},
+{"id": 30, "cat": "Lunch Non-Veg", "name": "मालवणी चिकन रस्सा | Malvani Chicken Rassa", "price": "Rs. 50", "desc": "Malvani Chicken Rassa.", "tags": ["Non-Veg", "Main Course", "Chicken", "Malvani"], "img": "img/malvani_chicken_rassa.jpeg"},
+{"id": 31, "cat": "Lunch Non-Veg", "name": "मालवणी चिकन सुक्का | Malvani Chicken Sukha", "price": "Rs. 80", "desc": "Malvani Chicken Sukha.", "tags": ["Non-Veg", "Main Course", "Chicken", "Malvani"], "img": "img/malvani_chicken_sukha.jpeg"},
+{"id": 32, "cat": "Lunch Non-Veg", "name": "मालवणी कलेजी पोटा सुक्का | Malvani Kaleji Potta Sukka", "price": "Rs. 80", "desc": "Malvani Kaleji Potta Sukka.", "tags": ["Non-Veg", "Main Course", "Chicken", "Malvani"], "img": "img/malvani_kaleji_potta_sukka.jpeg"},
+{"id": 33, "cat": "Lunch Non-Veg", "name": "चिकन खिमा | Chicken Kheema", "price": "Rs. 250", "desc": "Chicken Kheema.", "tags": ["Non-Veg", "Main Course", "Chicken"], "img": "img/chicken_kheema.jpeg"},
+{"id": 34, "cat": "Lunch Seafood", "name": "फिश पॉपकॉर्न (15 Pcs) | Fish Popcorn", "price": "Rs. 150", "desc": "Fish Popcorn (15 Pcs).", "tags": ["Non-Veg", "Seafood", "Starter", "Fish"], "img": "img/fish_popcorn.jpeg"},
+{"id": 35, "cat": "Lunch Seafood", "name": "कोळंबी सार | Kolambi Saar", "price": "Rs. 80", "desc": "Kolambi Saar.", "tags": ["Non-Veg", "Seafood", "Main Course", "Prawns"], "img": "img/kolambi_saar.jpeg"},
+{"id": 36, "cat": "Lunch Non-Veg", "name": "मालवणी गावठी रस्सा | Malvani Gavathi Rassa", "price": "Rs. 150", "desc": "Malvani Gavathi Rassa.", "tags": ["Non-Veg", "Main Course", "Chicken", "Malvani"], "img": "img/malvani_gavathi_rassa.jpeg"},
+{"id": 37, "cat": "Lunch Seafood", "name": "मालवणी खेकडा रस्सा | Malvani Khekda Rassa", "price": "Rs. 180", "desc": "Malvani Khekda Rassa.", "tags": ["Non-Veg", "Seafood", "Main Course", "Crab", "Malvani"], "img": "img/malvani_khekda_rassa.jpeg"},
+{"id": 38, "cat": "Lunch Non-Veg", "name": "मालवणी मटण रस्सा | Malvani Mutton Rassa", "price": "Rs. 150", "desc": "Malvani Mutton Rassa.", "tags": ["Non-Veg", "Main Course", "Mutton", "Malvani"], "img": "img/malvani_mutton_rassa.jpeg"},
+{"id": 39, "cat": "Lunch Non-Veg", "name": "मालवणी मटण सुक्का | Malvani Mutton Sukha", "price": "Rs. 150", "desc": "Malvani Mutton Sukha.", "tags": ["Non-Veg", "Main Course", "Mutton", "Malvani"], "img": "img/malvani_mutton_sukha.jpeg"},
+{"id": 40, "cat": "Lunch Seafood", "name": "कोळंबी मसाला | Kolambi Masala", "price": "Rs. 280", "desc": "Kolambi Masala.", "tags": ["Non-Veg", "Seafood", "Main Course", "Prawns"], "img": "img/kolambi_masala.jpeg"},
+{"id": 41, "cat": "Lunch Seafood", "name": "स्क्विड मसाला | Squid Masala", "price": "Rs. 250", "desc": "Squid Masala.", "tags": ["Non-Veg", "Seafood", "Main Course", "Squid"], "img": "img/squid_masala.jpeg"},
+{"id": 42, "cat": "Lunch Non-Veg", "name": "वजडी मसाला | Wajri Masala", "price": "Rs. 180", "desc": "Wajri Masala.", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/wajri_masala.jpeg"},
+{"id": 43, "cat": "Lunch Non-Veg", "name": "भेजा तवा मसाला | Bheja Tava Masala", "price": "Rs. 200", "desc": "Bheja Tava Masala.", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/bheja_tava_masala.jpeg"},
+{"id": 44, "cat": "Lunch Seafood", "name": "जवळा चटणी | Javala Chutney", "price": "Rs. 80", "desc": "Javala Chutney.", "tags": ["Non-Veg", "Seafood", "Accompaniments"], "img": "img/javala_chutney.jpeg"},
+{"id": 45, "cat": "Lunch Non-Veg", "name": "मटण खिमा | Mutton Kheema", "price": "Rs. 320", "desc": "Mutton Kheema.", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/mutton_kheema.jpeg"},
+{"id": 46, "cat": "Biryani", "name": "व्हेज बिर्याणी | Veg Biryani", "price": "Rs. 700", "desc": "Veg Biryani (Per 1 KG).", "tags": ["Veg", "Biryani"], "img": "img/veg_biryani_geetham.jpeg"},
+{"id": 47, "cat": "Biryani", "name": "पनीर बिर्याणी | Paneer Biryani", "price": "Rs. 800", "desc": "Paneer Biryani (Per 1 KG).", "tags": ["Veg", "Biryani", "Paneer"], "img": "img/paneer_biryani_geetham.jpeg"},
+{"id": 48, "cat": "Biryani", "name": "मशरूम बिर्याणी | Mushroom Biryani", "price": "Rs. 850", "desc": "Mushroom Biryani (Per 1 KG).", "tags": ["Veg", "Biryani", "Mushroom"], "img": "img/mushroom_biryani_geetham.jpeg"},
+{"id": 49, "cat": "Biryani", "name": "सोया बिर्याणी | Soya Biryani", "price": "Rs. 850", "desc": "Soya Biryani (Per 1 KG).", "tags": ["Veg", "Biryani", "Soya"], "img": "img/soya_biryani_geetham.jpeg"},
+{"id": 50, "cat": "Biryani", "name": "एग बिर्याणी | Egg Biryani", "price": "Rs. 800", "desc": "Egg Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Eggs"], "img": "img/egg_biryani_geetham.jpeg"},
+{"id": 51, "cat": "Biryani", "name": "चिकन बिर्याणी | Chicken Biryani", "price": "Rs. 800", "desc": "Chicken Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Chicken"], "img": "img/chicken_biryani_geetham.jpeg"},
+{"id": 52, "cat": "Biryani", "name": "चिकन घी रोस्ट बिर्याणी | Chicken Ghee Roast Biryani", "price": "Rs. 1200", "desc": "Chicken Ghee Roast Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Chicken"], "img": "img/chicken_ghee_roast_biryani.jpeg"},
+{"id": 53, "cat": "Biryani", "name": "फ्राईड चिकन बिर्याणी | Fried Chicken Biryani", "price": "Rs. 1600", "desc": "Fried Chicken Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Chicken"], "img": "img/fried_chicken_biryani.jpeg"},
+{"id": 54, "cat": "Biryani", "name": "मटण बिर्याणी | Mutton Biryani", "price": "Rs. 2000", "desc": "Mutton Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Mutton"], "img": "img/mutton_biryani_geetham.jpeg"},
+{"id": 55, "cat": "Biryani", "name": "फ्राईड मटण बिर्याणी | Fried Mutton Biryani", "price": "Rs. 2500", "desc": "Fried Mutton Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Mutton"], "img": "img/fried_mutton_biryani.jpeg"},
+{"id": 56, "cat": "Biryani", "name": "फिश बिर्याणी | Fish Biryani", "price": "Rs. 2500", "desc": "Fish Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Seafood", "Fish"], "img": "img/fish_biryani_geetham.jpeg"},
+{"id": 57, "cat": "Biryani", "name": "क्रॅब बिर्याणी | Crab Biryani", "price": "Rs. 2800", "desc": "Crab Biryani (Per 1 KG).", "tags": ["Non-Veg", "Biryani", "Seafood", "Crab"], "img": "img/crab_biryani_geetham.jpeg"},
+{"id": 58, "cat": "Beverages", "name": "सोलकढी | Solkadhi", "price": "Rs. 40", "desc": "Solkadhi.", "tags": ["Veg", "Beverages"], "img": "img/solkadhi.jpeg"},
+{"id": 59, "cat": "Beverages", "name": "कोकम सरबत | Kokam Sharbat", "price": "Rs. 30", "desc": "Kokam Sharbat.", "tags": ["Veg", "Beverages"], "img": "img/kokam_sharbat.jpeg"},
+{"id": 60, "cat": "Beverages", "name": "आवळा सरबत | Amla Sharbat", "price": "Rs. 30", "desc": "Amla Sharbat.", "tags": ["Veg", "Beverages"], "img": "img/amla_sharbat.jpeg"},
+{"id": 61, "cat": "Beverages", "name": "लिंबू सरबत | Nimbu Sharbat", "price": "Rs. 30", "desc": "Nimbu Sharbat.", "tags": ["Veg", "Beverages"], "img": "img/nimbu_sharbat.jpeg"},
+{"id": 62, "cat": "Beverages", "name": "दही | Dahi", "price": "Rs. 30", "desc": "Dahi.", "tags": ["Veg", "Beverages"], "img": "img/dahi_geetham.jpeg"},
+{"id": 63, "cat": "Beverages", "name": "ताक | Chass", "price": "Rs. 30", "desc": "Chass.", "tags": ["Veg", "Beverages"], "img": "img/chass.jpeg"},
+{"id": 64, "cat": "Beverages", "name": "चहा | Tea", "price": "Rs. 10", "desc": "Tea.", "tags": ["Veg", "Beverages", "Hot Drinks"], "img": "img/tea.jpeg"},
+{"id": 65, "cat": "Beverages", "name": "कॉफी | Coffee", "price": "Rs. 15", "desc": "Coffee.", "tags": ["Veg", "Beverages", "Hot Drinks"], "img": "img/coffee.jpeg"},
+{"id": 66, "cat": "Sweets", "name": "आम्रस (Seasonal) | Amras", "price": "Rs. 50", "desc": "Amras (Seasonal).", "tags": ["Veg", "Sweets", "Dessert"], "img": "img/amras.jpeg"},
+{"id": 67, "cat": "Sweets", "name": "चोको पॅनकेक (6 Pcs) | Choco Pancake", "price": "Rs. 120", "desc": "Choco Pancake (6 Pcs).", "tags": ["Veg", "Sweets", "Dessert", "Pancake"], "img": "img/choco_pancake.jpeg"},
 
+
+              
 
 
           
